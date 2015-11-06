@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>My App</title>
+    <title>Trypod</title>
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.min.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
@@ -20,14 +20,14 @@
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
       <div class="content-block">
-        <p>Left panel content goes here</p>
+        <p>Search filters</p>
       </div>
     </div>
-    <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
-      </div>
+    <!-- Request popup -->
+    <div class="popup popup-request">
+      <a href="index.html" class="close-popup">
+        <p>Request successful</p>
+      </a>
     </div>
     <!-- Views-->
     <div class="views">
@@ -35,11 +35,14 @@
       <div class="view view-main">
         <!-- Top Navbar-->
         <div class="navbar">
-          <div class="navbar-inner">
-            <!-- We have home navbar without left link-->
-            <div class="center sliding">Awesome App</div>
-            <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+          <div class="navbar-inner navbar-search">
+            <div class="center">
+              <!-- Search bar -->
+              <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+                <div class="searchbar-input">
+                  <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+                </div><a href="#" class="searchbar-cancel">Cancel</a>
+              </form>
             </div>
           </div>
         </div>
@@ -47,56 +50,111 @@
         <div class="pages navbar-through toolbar-through">
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
-            <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="content-block-title">Welcome To My Awesome App</div>
-              <div class="content-block">
-                <div class="content-block-inner">
-                  <p>Couple of worlds here because my app is so awesome!</p>
-                  <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
+            <!-- Search bar overlay -->
+            <div class="searchbar-overlay">
+              <div class="list-block">
+                <div class="list-group">
+                  <ul>
+                    <li class="list-group-title">RECENT SEARCHES</li>
+                    <li>
+                      <a href="search_results.html" class="item-link item-content search-suggestion">
+                        <div class="item-inner">
+                          <div class="item-title">nikon d600</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">nikon 35mm f/1.8</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-group">
+                  <ul>
+                    <li class="list-group-title">POPULAR SEARCHES</li>
+                    <li class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">sony a7</div>
+                      </div>
+                    </li>
+                    <li class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">canon 5d mkIII</div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="content-block-title">What about simple navigation?</div>
-              <div class="list-block">
-                <ul>
-                  <li><a href="about.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner"> 
-                          <div class="item-title">About</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="services.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Services</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="form.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Form</div>
-                        </div>
-                      </div></a></li>
-                </ul>
-              </div>
-              <div class="content-block-title">Side panels</div>
-              <div class="content-block">
-                <div class="row">
-                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
-                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
+            </div>
+
+            <!-- This block will be displayed if nothing found -->
+            <div class="content-block searchbar-not-found">
+              <div class="content-block-inner">Nothing found</div>
+            </div>
+     
+            <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
+            <div class="list-block list-block-search searchbar-found">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Item1</div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Item2</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">DSLR</div>
+              <div class="card listing-card">
+                <div class="card-header no-border">
+                  <div class="listing-avatar"><img src="http://lorempixel.com/34/34/people/1" width="34" height="34"></div>
+                  <div class="listing-name">Sony a7</div>
+                  <div class="listing-reviews">7 reviews</div>
+                </div>
+                <div class="card-content"><img src="http://lorempixel.com/400/200/cats/1" width="100%"></div>
+                <div class="card-footer no-border">
+                  <div class="listing-price">$40</div>
+                  <div class="listing-type">icons</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- Bottom Toolbar-->
-        <div class="toolbar">
-          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
+        <div class="toolbar tabbar tabbar-labels">
+          <div class="toolbar-inner">
+            <a href="index.html" class="tab-link active">
+              <i class="icon tabbar-demo-icon-1"></i>
+              <span class="tabbar-label">Search</span>
+            </a>
+            <a href="#tab2" class="tab-link">
+              <i class="icon tabbar-demo-icon-2">
+                <span class="badge bg-red">5</span>
+              </i>
+              <span class="tabbar-label">Gear</span>
+            </a>
+            <a href="#tab3" class="tab-link">
+              <i class="icon tabbar-demo-icon-3"></i>
+              <span class="tabbar-label">Listings</span>
+            </a>
+            <a href="#tab4" class="tab-link">
+              <i class="icon tabbar-demo-icon-4"></i>
+              <span class="tabbar-label">Settings</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIfeRmJDVv9s8Nml45xiQsAwhc3egY_Y"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
   </body>

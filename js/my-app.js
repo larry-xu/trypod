@@ -46,3 +46,11 @@ function createContentPage() {
     );
 	return;
 }
+
+// Callbacks to run specific code for specific pages, for example for About page:
+myApp.onPageInit('listing', function (page) {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 1.305024, lng: 103.774007},
+        zoom: 14
+    });
+});
