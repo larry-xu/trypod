@@ -52,31 +52,31 @@ i.tabbar-demo-icon-1{width:30px;height:30px;background-image:url("data:image/svg
   margin-top: 20px;
 }
 
-.listing-card a {
+.results-card a {
   color: #000;
 }
-.listing-card .card-header {
+.results-card .card-header {
   display: block;
   padding: 10px;
 }
-.listing-card .listing-avatar {
+.results-card .results-avatar {
   float: right;
 }
-.listing-card .listing-name {
+.results-card .results-name {
   font-size: 14px;
   font-weight: 500;
 }
-.listing-card .listing-reviews {
+.results-card .results-reviews {
   font-size: 13px;
   color: #8e8e93;
 }
-.listing-card .card-footer {
+.results-card .card-footer {
   background: #fafafa;
 }
-.listing-card .card-content img {
+.results-card .card-content img {
   display: block;
 }
-.listing-card .card-content-inner {
+.results-card .card-content-inner {
   padding: 15px 10px;
 }
 
