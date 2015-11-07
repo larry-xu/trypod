@@ -22,3 +22,51 @@ myApp.onPageInit('listing', function (page) {
         zoom: 14
     });
 });
+
+myApp.onPageInit('messages', function (page) {
+    var myMessages = $$('.messages')[0].f7Messages;
+    var myMessagebar = $$('.messagebar')[0].f7Messagebar;
+
+    $$('.messagebar .link').on('click', function () {
+        // Message text
+        var messageText = myMessagebar.value().trim();
+        // Exit if empy message
+        if (messageText.length === 0) return;
+
+        // Empty messagebar
+        myMessagebar.clear()
+
+        var messageType = 'sent';
+
+        // Avatar and name for received message
+        var avatar = 'http://lorempixel.com/output/people-q-c-100-100-1.jpg';
+        // Add message
+        myMessages.addMessage({
+            // Message text
+            text: messageText,
+            // Random message type
+            type: messageType,
+            // Avatar and name:
+            avatar: avatar
+        });
+        setTimeout(msgResponse, 3000);
+    });
+
+    var responseIndex = 0
+    var responses = ['Monday at 9am', 'Great!'];
+    function msgResponse() {
+        var messageText = responses[responseIndex++];
+        var messageType = 'received';
+
+        // Avatar and name for received message
+        var avatar = 'http://lorempixel.com/output/people-q-c-100-100-9.jpg';
+        myMessages.addMessage({
+            // Message text
+            text: messageText,
+            // Random message type
+            type: messageType,
+            // Avatar and name:
+            avatar: avatar
+        });
+    }
+});
