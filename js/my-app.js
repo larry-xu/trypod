@@ -10,6 +10,11 @@ var mainView = myApp.addView('#tab1', {
     dynamicNavbar: true
 });
 
+var gearView = myApp.addView('#tab2', {
+    // Because we use fixed-through navbar we can enable dynamic navbar
+    dynamicNavbar: true
+});
+
 var listingsView = myApp.addView('#tab3', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
@@ -69,4 +74,8 @@ myApp.onPageInit('messages', function (page) {
             avatar: avatar
         });
     }
+});
+
+$$('.popup-request').on('close', function () {
+    myApp.showTab('#tab2');
 });

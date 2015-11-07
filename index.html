@@ -191,6 +191,57 @@
         </div>
       </div>
       <!-- Tab 2 - View 2 -->
+      <div id="tab2" class="view tab">
+        <div class="navbar">
+          <div class="navbar-inner navtabbar">
+            <div class="center">
+              <!-- Buttons row as tabs controller in navbar-->
+              <div class="buttons-row">
+                <!-- Link to 1st tab, active -->
+                <a href="#bookmarks" class="tab-link button">Bookmarks</a>
+                <!-- Link to 2nd tab -->
+                <a href="#requests" class="tab-link active button">Requests</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="listings" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content tabs">
+              <div id="bookmarks" class="tab">
+                <div class="card listing-card">
+                  <div class="card-header no-border">
+                    <div class="listing-name">Sony a7 kit</div>
+                  </div>
+                  <div class="card-footer no-border">
+                    <a href="requests.html">
+                      <span class="badge bg-red">1</span> new request<br>
+                      View Requests</a>
+                    <div class="listing-type">calendar</div>
+                  </div>
+                </div>
+              </div>
+              <div id="requests" class="tab active">
+                <div class="content-block-title">Pending requests</div>
+                <div class="card listing-card">
+                  <div class="card-header no-border">
+                    <div class="listing-name">Sony a7 kit</div>
+                  </div>
+                  <div class="card-footer no-border">
+                    <a href="requests.html">View Details</a>
+                    <div class="listing-type">icons</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tab 3 - View 3 -->
       <div id="tab3" class="view tab">
         <div class="navbar">
           <div class="navbar-inner">
