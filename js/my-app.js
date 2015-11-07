@@ -79,3 +79,29 @@ myApp.onPageInit('messages', function (page) {
 $$('.popup-request').on('close', function () {
     myApp.showTab('#tab2');
 });
+
+myApp.onPageInit('requests', function (page) {
+    $$('.respond').once('click', function () {
+        var buttons = [
+            {
+                text: 'Accept request',
+                bold: true,
+                onClick: acceptRequest
+            },
+            {
+                text: 'Decline request'
+            },
+            {
+                text: 'Cancel',
+                color: 'red'
+            },
+        ];
+        myApp.actions(buttons);
+    });
+});
+
+function acceptRequest() {
+    $$('.requests-cat1').text('Current requests');
+    $$('.respond').text('Handoff');
+    $$('.respond').attr('href', 'handoff.html');
+}
