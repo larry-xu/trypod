@@ -146,3 +146,38 @@ i.tabbar-demo-icon-1{width:30px;height:30px;background-image:url("data:image/svg
 .buttons-row {
   width: 100%;
 }
+
+.listing-card .card-header {
+  display: block;
+  padding: 10px;
+}
+.listing-card .listing-edit {
+  float: right;
+}
+
+.requests-card .card-header {
+  display: block;
+  padding: 10px;
+}
+.requests-card .requests-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 44px;
+  line-height: 34px;
+}
+
+.requests-card .requests-date {
+  font-size: 14px;
+  color: #8e8e93;
+  float: right;
+  line-height: 34px;
+}
+.requests-card .requests-avatar {
+  float: left;
+}
+.requests-card .requests-approved {
+  color: green;
+}
+.requests-card .requests-declined {
+  color: red;
+}

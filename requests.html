@@ -1,7 +1,7 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-    <div class="center">Requests</div>
+    <div class="center">Requests for Sony a7 kit</div>
   </div>
 </div>
 <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
@@ -10,17 +10,39 @@
   <div data-page="requests" class="page">
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="content-block-title">Requests for Sony a7 kit</div>
-      <div class="card listing-card">
+      <div class="content-block-title">Pending requests</div>
+      <div class="card requests-card">
         <div class="card-header no-border">
-          <div class="listing-name">Sony a7 kit</div>
-          <div class="listing-reviews">Nov 9-11</div>
+          <div class="requests-date">Nov 9-11</div>
+          <div class="requests-avatar"><img src="http://lorempixel.com/34/34/people/3" width="34" height="34"></div>
+          <div class="requests-name">John Smith</div>
         </div>
         <div class="card-footer no-border">
-          <a href="messages.html">
-            <span class="badge bg-red">1</span> new message<br>
-            View Profile</a>
-          <div class="listing-type">messages icon</div>
+          <a href="#">Respond</a>
+          <div class="requests-type">profile/<a href="messages.html">messages<span class="badge bg-red">1</span></a>/calendar</div>
+        </div>
+      </div>
+      <div class="content-block-title">Previous requests</div>
+      <div class="card requests-card">
+        <div class="card-header no-border">
+          <div class="requests-date">Nov 3-5</div>
+          <div class="requests-avatar"><img src="http://lorempixel.com/34/34/people/2" width="34" height="34"></div>
+          <div class="requests-name">Jane Doe</div>
+        </div>
+        <div class="card-footer no-border">
+          <div class="requests-approved">Accepted</div>
+          <div class="requests-type">profile/messages/calendar</div>
+        </div>
+      </div>
+      <div class="card requests-card">
+        <div class="card-header no-border">
+          <div class="requests-date">Nov 1-4</div>
+          <div class="requests-avatar"><img src="http://lorempixel.com/34/34/people/2" width="34" height="34"></div>
+          <div class="requests-name">Robert Frost</div>
+        </div>
+        <div class="card-footer no-border">
+          <div class="requests-declined">Declined</div>
+          <div class="requests-type">profile/messages/calendar</div>
         </div>
       </div>
     </div>
