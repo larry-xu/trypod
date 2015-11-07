@@ -105,3 +105,13 @@ function acceptRequest() {
     $$('.respond').text('Handoff');
     $$('.respond').attr('href', 'handoff.html');
 }
+
+myApp.onPageInit('handoff2', function (page) {
+    $$('#photoUpload').on('change', function () {
+        if (event.target.files.length === 1 && event.target.files[0].type.indexOf('image/') === 0) {
+            var src = URL.createObjectURL(event.target.files[0])
+            var img = '<img src="'+src+'" width="100">'
+            $$('.photo-container').append(img);
+        }
+    });
+});
