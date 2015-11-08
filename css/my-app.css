@@ -47,6 +47,9 @@
 .navbar {
   background: #FFBF76;
 }
+.navbar a {
+  color: #000000;
+}
 .navbar .center {
   color: #ffffff;
 }
@@ -64,6 +67,21 @@
 
 .searchbar {
   background: #FFBF76;
+}
+
+
+.panel {
+  background: #e7a355;
+}
+.panel .list-block ul:before {
+  height: 0;
+}
+.panel .list-block li {
+  background: #ffbf76;
+}
+.panel .list-block li.list-group-title {
+  background: #e7a355;
+  color: #000;
 }
 
 /*::-webkit-input-placeholder {
@@ -287,7 +305,7 @@
   text-transform: uppercase;
 }
 
-#map {
+#map, #filter-map {
   height: 200px;
 }
 

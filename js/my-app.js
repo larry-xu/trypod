@@ -32,6 +32,10 @@ myApp.onPageInit('search_results', function (page) {
     $$('.icon-unliked').on('click', function (e) {
         $$(this).removeClass('icon-unliked').addClass('icon-liked');
     })
+    var map = new google.maps.Map(document.getElementById('filter-map'), {
+        center: {lat: 1.305024, lng: 103.774007},
+        zoom: 14
+    });
 });
 
 myApp.onPageInit('messages', function (page) {

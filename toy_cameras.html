@@ -17,45 +17,110 @@
 <div class="pages navbar-through toolbar-through">
   <!-- Page, data-page contains page name-->
   <div data-page="search_results" class="page">
+    <!-- Search bar overlay -->
+    <div class="searchbar-overlay">
+      <div class="list-block">
+        <div class="list-group">
+          <ul>
+            <li class="list-group-title">RECENT SEARCHES</li>
+            <li>
+              <a href="search_results.html" class="item-link item-content search-suggestion">
+                <div class="item-inner">
+                  <div class="item-title">nikon d600</div>
+                </div>
+              </a>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title">nikon 35mm f/1.8</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="list-group">
+          <ul>
+            <li class="list-group-title">POPULAR SEARCHES</li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title">sony a7</div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title">canon 5d mkIII</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- This block will be displayed if nothing found -->
+    <div class="content-block searchbar-not-found">
+      <div class="content-block-inner">Nothing found</div>
+    </div>
+
+    <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
+    <div class="list-block list-block-search searchbar-found">
+      <ul>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Item1</div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Item2</div>
+          </div>
+        </li>
+      </ul>
+    </div>
     <!-- Scrollable page content-->
     <div class="page-content">
       <div class="content-block-title">30 results for 'toy cameras'</div>
       <div class="card results-card">
-        <a href="listing.html">
-          <div class="card-header no-border">
-            <div class="results-avatar"><img src="http://lorempixel.com/60/60/people/1" width="60" height="60"></div>
-            <div class="results-name">Holga Pinhole 120GCFN</div>
-            <div class="results-reviews">7 reviews</div>
+        <div class="card-header no-border">
+          <div class="results-avatar"><img src="http://lorempixel.com/60/60/people/1" width="60" height="60"></div>
+          <div class="results-name">Holga Pinhole 120GCFN</div>
+          <div class="results-reviews"><i class="icon icon-ratings"></i> 7 reviews</div>
+        </div>
+        <div class="card-content"><img src="img/holga1.jpg" width="100%"></div>
+        <div class="card-footer no-border">
+          <div class="results-price">$40 / day&nbsp;
+            <i class="icon icon-camera"></i>
+            <i class="icon icon-lens"></i>
           </div>
-          <div class="card-content"><img src="img/holga1.jpg" width="100%"></div>
-          <div class="card-footer no-border">
-            <div class="results-price">$40 / day</div>
-            <div class="results-type">icons</div>
-          </div>
-        </a>
+          <div class="results-type"><i class="icon icon-unliked"></i></div>
+        </div>
       </div>
       <div class="card results-card">
         <div class="card-header no-border">
           <div class="results-avatar"><img src="http://lorempixel.com/60/60/people/2" width="60" height="60"></div>
           <div class="results-name">Diana Holga vintage</div>
-          <div class="results-reviews">7 reviews</div>
+          <div class="results-reviews"><i class="icon icon-ratings"></i> 7 reviews</div>
         </div>
         <div class="card-content"><img src="img/holga2.jpg" width="100%"></div>
         <div class="card-footer no-border">
-          <div class="results-price">$55 / day</div>
-          <div class="results-type">icons</div>
+          <div class="results-price">$55 / day&nbsp;
+            <i class="icon icon-camera"></i>
+            <i class="icon icon-lens"></i>
+          </div>
+          <div class="results-type"><i class="icon icon-unliked"></i></div>
         </div>
       </div>
       <div class="card results-card">
         <div class="card-header no-border">
           <div class="results-avatar"><img src="http://lorempixel.com/60/60/people/3" width="60" height="60"></div>
           <div class="results-name">Diana Mini Tiffany Blue</div>
-          <div class="results-reviews">5 reviews</div>
+          <div class="results-reviews"><i class="icon icon-ratings"></i> 5 reviews</div>
         </div>
         <div class="card-content"><img src="img/toy.jpg" width="100%"></div>
         <div class="card-footer no-border">
-          <div class="results-price">$55 / day</div>
-          <div class="results-type">icons</div>
+          <div class="results-price">$55 / day&nbsp;
+            <i class="icon icon-camera"></i>
+            <i class="icon icon-lens"></i>
+          </div>
+          <div class="results-type"><i class="icon icon-unliked"></i></div>
         </div>
       </div>
     </div>
