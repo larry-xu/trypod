@@ -44,6 +44,12 @@
   background: #ffffff;
 }
 
+.navbar {
+  background: #FFBF76;
+}
+.navbar .center {
+  color: #ffffff;
+}
 .navbar-search {
   padding: 0;
 }
@@ -289,11 +295,19 @@
   height: 200px;
 }
 
+.popup {
+  background: #ffbf76;
+  text-align: center;
+  padding-top: 170px 50px 0 50px;
+}
 .popup a {
   color: #000000;
   display: block;
   width: 100%;
   height: 100%;
+}
+.popup img {
+  width: 50%;
 }
 
 .navtabbar .center {
