@@ -28,6 +28,12 @@ myApp.onPageInit('listing', function (page) {
     });
 });
 
+myApp.onPageInit('search_results', function (page) {
+    $$('.icon-unliked').on('click', function (e) {
+        $$(this).removeClass('icon-unliked').addClass('icon-liked');
+    })
+});
+
 myApp.onPageInit('messages', function (page) {
     var myMessages = $$('.messages')[0].f7Messages;
     var myMessagebar = $$('.messagebar')[0].f7Messagebar;

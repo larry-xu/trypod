@@ -14,41 +14,90 @@
   <div data-page="listing" class="page no-tabbar">
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="listing-price">$40/day</div>
-      <div class="content-block-title">Sony a7</div>
-      <div class="listing-price security">$120</div>
-      <div class="listing-reviews">4 reviews</div>
-      <div class="swiper-container swiper-init" data-speed="400">
+      <div class="listing-price">$40 / day<br><i class="icon icon-deposit"></i> $120</div>
+      <div class="listing-title content-block-title">Sony a7&nbsp;
+        <i class="icon icon-camera"></i>
+        <i class="icon icon-lens"></i>
+      </div>
+      <div class="listing-reviews"><i class="icon icon-ratings"></i> (4)</div>
+      <div class="swiper-container swiper-init" data-speed="400" data-pagination=".swiper-pagination">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="http://lorempixel.com/400/200/cats/1" width="100%"></div>
           <div class="swiper-slide"><img src="http://lorempixel.com/400/200/cats/6" width="100%"></div>
           <div class="swiper-slide"><img src="http://lorempixel.com/400/200/cats/7" width="100%"></div>
           <div class="swiper-slide"><img src="http://lorempixel.com/400/200/cats/8" width="100%"></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
       <div class="content-block-title">Details</div>
       <div class="content-block">
-        <div class="content-block-inner">
-          <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
-        </div>
+        <p>Vintage toy camera with lovely light leaks pattern. Good for all occasions, except low light conditions, not so ideal when flash comes on.</p>
+        <ul>
+          <li>Camera body + lens provided</li>
+          <li>Battery pack</li>
+          <li>Neck strap *always USE the strap*</li>
+        </ul>
       </div>
       <div class="content-block-title">Pickup Location</div>
-      <div id="map"></div>
+      <div class="content-block">
+        <div id="map"></div>
+      </div>
       <div class="content-block-title">Owner</div>
       <div class="content-block">
-        <div class="content-block-inner">
-          <img class="owner-avatar" src="http://lorempixel.com/100/100/people/1" width="100" height="100">
-          <div class="owner-details">
-            <h3>John Smith</h3>
-            <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+        <div class="row owner-details">
+          <div class="owner-details-box"></div>
+          <div class="col-33 owner-details-left">
+            24 active listings<br>Member since Jul 2014
           </div>
+          <div class="col-33">
+            <img class="owner-avatar" src="http://lorempixel.com/120/120/people/1">
+          </div>
+          <div class="col-33 owner-details-right">
+            Photography enthusiast and collector
+          </div>
+        </div>
+        <div class="owner-name">Larry Xu</div>
+        <div class="owner-location">Singapore, Singapore</div>
+        <div class="owner-badges">
+          <i class="icon icon-flickr"></i>
+          <i class="icon icon-500px"></i>
+          <i class="icon icon-picasa"></i>
         </div>
       </div>
       <div class="content-block-title">Reviews</div>
       <div class="content-block">
-        <div class="content-block-inner">
-          <img src="http://lorempixel.com/100/100/people/1" width="100" height="100">
-          <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+        <div class="photo-reviews-container">
+          <div class="photo-reviews">
+            <img src="http://lorempixel.com/200/200/city/1">
+            <img src="http://lorempixel.com/200/200/city/2">
+            <img src="http://lorempixel.com/200/200/city/3">
+            <img src="http://lorempixel.com/200/200/city/4">
+            <img src="http://lorempixel.com/200/200/city/5">
+          </div>
+        </div>
+        <div class="review-container row">
+          <div class="col-33 review-left">
+            <img src="http://lorempixel.com/100/100/people/1" class="review-avatar">
+            <span class="review-name">Lingxi Teo</span>
+            <br>
+            <span class="review-date">Oct 17, 2015</span>
+          </div>
+          <div class="col-66 review-details">
+            <img src="img/icon_star_ratings.png">
+            <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+          </div>
+        </div>
+        <div class="review-container row">
+          <div class="col-33 review-left">
+            <img src="http://lorempixel.com/100/100/people/1" class="review-avatar">
+            <span class="review-name">Cat Yeo</span>
+            <br>
+            <span class="review-date">Aug 17, 2015</span>
+          </div>
+          <div class="col-66 review-details">
+            <img src="img/icon_star_ratings.png">
+            <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
+          </div>
         </div>
       </div>
     </div>
