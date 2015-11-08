@@ -298,7 +298,7 @@
 .popup {
   background: #ffbf76;
   text-align: center;
-  padding-top: 170px 50px 0 50px;
+  padding: 170px 50px 0 50px;
 }
 .popup a {
   color: #000000;
