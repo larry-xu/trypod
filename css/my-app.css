@@ -64,6 +64,9 @@
 .toolbar {
   background: #ffd3a3;
 }
+.tabbar a.active {
+  border-top: 3px solid #ffffff;
+}
 
 .searchbar {
   background: #FFBF76;
@@ -328,13 +331,28 @@
   width: 50%;
 }
 
+.navtabbar {
+  padding: 0;
+}
 .navtabbar .center {
   position: static;
   width: 100%;
+  height: 100%;
 }
 
 .buttons-row {
   width: 100%;
+  height: 100%;
+}
+.buttons-row .tab-link.button {
+  line-height: 44px;
+  border: none;
+  height: 100%;
+}
+.buttons-row .tab-link.button.active {
+  border-bottom: 5px solid #ffffff;
+  background: none;
+  color: #000000;
 }
 
 .listing-card .card-header {
@@ -431,4 +449,22 @@
 }
 .review-details p {
   margin-top: 10px;
+}
+
+.request-info {
+  height: 50px;
+}
+.request-title {
+  margin-top: 10px;
+}
+.request-price {
+  float: right;
+  text-align: right;
+  margin-right: 15px;
+  color: #868686;
+}
+.request-dates {
+  background: #FFBF76;
+  padding: 10px;
+  line-height: 20px;
 }
