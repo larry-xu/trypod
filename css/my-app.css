@@ -456,6 +456,10 @@
 }
 .request-title {
   margin-top: 10px;
+  margin-bottom: 0;
+}
+.request-status {
+  margin-left: 15px;
 }
 .request-price {
   float: right;
