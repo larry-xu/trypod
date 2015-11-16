@@ -4,7 +4,7 @@
   background-image: url(../img/search.png);
 }
 .icon.icon-gear {
-  width: 30px;
+  width: 22px;
   height: 30px;
   background-image: url(../img/gear.png);
 }
@@ -17,6 +17,23 @@
   width: 30px;
   height: 30px;
   background-image: url(../img/settings.png);
+}
+
+.icon.icon-message {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/message.png);
+}
+
+.icon.icon-calendar {
+  width: 25px;
+  height: 30px;
+  background-image: url(../img/calendar.png);
+}
+.icon.icon-location {
+  width: 18px;
+  height: 35px;
+  background-image: url(../img/location.png);
 }
 
 .row {
@@ -49,9 +66,6 @@
 }
 .navbar a {
   color: #000000;
-}
-.navbar .center {
-  color: #ffffff;
 }
 .navbar-search {
   padding: 0;
@@ -389,6 +403,9 @@
 .requests-card .requests-declined {
   color: red;
 }
+.requests-card .card-footer {
+  padding-top: 0;
+}
 
 .fileUpload {
   position: relative;
@@ -471,4 +488,7 @@
   background: #FFBF76;
   padding: 10px;
   line-height: 20px;
+}
+.request-icons {
+  text-align: center;
 }
