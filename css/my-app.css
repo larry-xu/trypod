@@ -25,6 +25,12 @@
   background-image: url(../img/message.png);
 }
 
+.icon.icon-profile {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/profile.png);
+}
+
 .icon.icon-calendar {
   width: 25px;
   height: 30px;
@@ -376,6 +382,10 @@
 .listing-card .listing-edit {
   float: right;
 }
+.listing-card .card-content {
+  height: 200px;
+  overflow: hidden;
+}
 
 .requests-card .card-header {
   display: block;
@@ -397,6 +407,9 @@
 .requests-card .requests-avatar {
   float: left;
 }
+.requests-card .requests-avatar img {
+  border-radius: 34px;
+}
 .requests-card .requests-approved {
   color: green;
 }
@@ -405,6 +418,17 @@
 }
 .requests-card .card-footer {
   padding-top: 0;
+}
+
+.requests-card.user .card-content {
+  height: 200px;
+  overflow: hidden;
+}
+.requests-card.user .requests-name {
+  margin: 0;
+}
+.requests-card.user .card-footer {
+  padding-top: 10px;
 }
 
 .fileUpload {
@@ -451,6 +475,9 @@
   margin-right: 10px;
 }
 
+.review-container:last-of-type {
+  margin-bottom: 70px;
+}
 .review-avatar {
   border-radius: 100px;
   width: 100%;

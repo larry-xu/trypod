@@ -54,7 +54,7 @@ myApp.onPageInit('messages', function (page) {
         var messageType = 'sent';
 
         // Avatar and name for received message
-        var avatar = 'http://lorempixel.com/output/people-q-c-100-100-1.jpg';
+        var avatar = '../img/larry.jpg';
         // Add message
         myMessages.addMessage({
             // Message text
@@ -74,7 +74,7 @@ myApp.onPageInit('messages', function (page) {
         var messageType = 'received';
 
         // Avatar and name for received message
-        var avatar = 'http://lorempixel.com/output/people-q-c-100-100-9.jpg';
+        var avatar = '../img/xiayue.jpg';
         myMessages.addMessage({
             // Message text
             text: messageText,
@@ -124,4 +124,8 @@ myApp.onPageInit('handoff2', function (page) {
             $$('.photo-container').append(img);
         }
     });
+});
+
+$$('.settings-tab').on('click', function () {
+    $$('#badge').remove();
 });
